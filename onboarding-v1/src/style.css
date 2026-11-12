@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #20283a;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --ink: #20283a;
+  --muted: #8791a5;
+  --line: #edf0f5;
+  --blue: #4969dc;
+  --blue-dark: #3857c7;
+  --sidebar: #202b43;
+  --surface: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #f5f7fb;
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+h1 {
+  margin: 7px 0 5px;
+  color: #20283a;
+  font: 800 27px "Manrope", sans-serif;
+  letter-spacing: -.9px;
+}
+
+.page-subtitle {
+  margin: 0;
+  color: #8b95a8;
+  font-size: 12px;
+}
+
+.panel-card {
+  padding: 19px;
+  background: var(--surface);
+  border: 1px solid #edf0f5;
+  border-radius: 14px;
+  box-shadow: 0 3px 14px #26355005;
+}
+
+.detail-kicker {
+  margin-bottom: 5px;
+  color: #929db1;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.25px;
+}
+
+.custom-progress {
+  height: 7px;
+  overflow: hidden;
+  background: #edf0f7;
+  border-radius: 10px;
+}
+
+.custom-progress .progress-bar {
+  background: linear-gradient(90deg, #5c78e3, #8a9cf0);
+  border-radius: 10px;
+  transition: width .25s ease;
+}
+
+.empty-state {
+  padding: 35px 18px;
+  color: #98a2b4;
+  font-size: 11px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  --bs-btn-bg: #4969dc;
+  --bs-btn-border-color: #4969dc;
+  --bs-btn-hover-bg: #3857c7;
+  --bs-btn-hover-border-color: #3857c7;
+  --bs-btn-active-bg: #3857c7;
+  --bs-btn-active-border-color: #3857c7;
+  --bs-btn-disabled-bg: #9aabe9;
+  --bs-btn-disabled-border-color: #9aabe9;
+  box-shadow: 0 5px 13px #4969dc24;
+}
+
+.form-select,
+.form-control {
+  border-color: #e9edf3;
+  border-radius: 8px;
+  color: #5d687d;
+  font-size: 10px;
+  box-shadow: none !important;
+}
+
+.form-select {
+  min-height: 36px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.form-control {
+  padding: 9px 11px;
+}
+
+.form-control::placeholder {
+  color: #b2bac7;
+}
